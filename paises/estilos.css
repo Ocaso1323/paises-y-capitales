@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #1c1d1e;
+    background-image: url(img/desktop-wallpaper-black-world-map-displaying-17-gallery-for-black-world-1440x900-for-your-mobile-tablet-dark-map.jpg);
+}
+
+
+.container{
+   width: 400px;
+   min-height: 10px;
+   padding: 10px;
+   flex-direction: column;
+   background-color: #5e6d71;
+   border-radius: 50px;
+   box-shadow: 0 0 50px rgba(0, 0, 0, 0.6); 
+}
+
+h1{
+    color: rgb(47, 47, 99);
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+    margin-bottom: 1.5rem;
+}
+
+.container-busqueda{
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 2rem;
+}
+
+input{
+    padding: 5px 10px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    border-bottom: 4px solid hsl(240, 9%, 4%);
+}
+
+button{
+    background-color: #384b80;
+    border: none;
+    color: white;
+    border-radius: 5rem;
+    cursor: pointer;
+}
+
+.resultado{
+    margin-top: 10px;
+}
+
+.resultado .flag-img{
+    display: block;
+    width: 45%;
+    min-width: 7.5em;
+    margin: 1.8em auto 1.2em auto;
+}
+
+.resultado h2 {
+    font-weight: 600;
+    color: #222a43;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 1.8em;
+}
+
+.resultado .data-wrapper {
+    margin-bottom: 1em;
+    letter-spacing: 0.3px;
+}
+
+.resultado h4 {
+    display: inline;
+    font-weight: 500;
+    color: #151619;
+}
+
+.resultado span {
+color: hsl(120, 3%, 6%);
+}
+
+.resultado h3{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: hsl(140, 23%, 5%);
+}
+
+.resultado .loading{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    color: #0d100d;
+    font-size: 15px;
+    text-align: center;
+}
